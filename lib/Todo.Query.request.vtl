@@ -1,0 +1,8 @@
+#set($payload = {"name": "Go GYM", "ID": $context.arguments.ID})
+
+$util.log.info("Context arguments: {}", $context.arguments)
+$util.log.info("Payload to the data source is: {}", $payload)
+{
+    "version": "2018-05-29",
+    "payload": $util.toJson($payload)
+}

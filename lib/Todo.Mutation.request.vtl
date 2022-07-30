@@ -1,0 +1,6 @@
+#set($payload = {"name": $context.arguments.name, "ID": "1" })
+
+{
+    "version": "2018-05-29",
+    "payload": $util.toJson($payload)
+}
