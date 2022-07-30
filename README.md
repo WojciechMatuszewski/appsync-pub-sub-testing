@@ -26,6 +26,8 @@ Inspired by [this documentation page](https://docs.aws.amazon.com/appsync/latest
 
     - **Alternatively, you can use AWS SDK** and evaluate the VTL template via the SDK call. I prefer this method over running the simulator. Nothing to update, all you do is an SDK call. Refer to the code in `lib/__tests__/template.test.ts`.
 
+      - It would be nice to have a type defined for the `context`. Requiring a `string` instead of a well-typed object seems lazy to me.
+
 - AppSync documentation is good. The issues I had usually stemmed from me not reading it.
 
 - **`vitest` feels much better than `jest`**. It might be the "new cool tool" bias, but it "just" feels better. (I have not yet had the chance to mock time with asynchronous functions with `vitest`. Maybe after trying, I will hate it as much I hate `jest`?).
